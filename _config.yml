@@ -20,4 +20,4 @@ defaults:
       type: "posts"
     values:
       layout: "default"
-      author: "Andrew Mullins"
+      author: "Andrew"

@@ -76,6 +76,12 @@ div.section {
 	}
 }
 
+#post pre {
+	border: 1px solid #ddd;
+	padding: 0 .4em;
+	margin-bottom: 20px !important;
+}
+
 /* iPad */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	nav {
