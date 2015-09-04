@@ -5,9 +5,13 @@ description: > # this means to ignore newlines until "baseurl:"
   The personal webpage and blog of Andrew Mullins. Data science and statistics
   using R, Python and Julia.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://blog.andrew-mullins.com" # the base hostname & protocol for your site
 twitter_username: andrewjmullins 
 github_username: andrewjlm 
+
+# For RSS Feeds
+name: Andrew Mullins - Blog
+
 
 # Build settings
 markdown: kramdown
