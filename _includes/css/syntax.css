@@ -7,6 +7,8 @@
  .highlight pre {
     background-color: #49483E;
     border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 3px;
     color: #FFFFFF;
  }
 
