@@ -16,6 +16,10 @@ nav ul li {
 	margin-bottom: 10px;
 }
 
+h4 a {
+	text-decoration: none;
+}
+
 nav ul li a,
 nav ul li a:visited,
 nav ul li a:active {
