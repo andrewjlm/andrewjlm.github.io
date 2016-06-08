@@ -15,7 +15,10 @@ name: Andrew Mullins - Blog
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
+
+gems:
+  - jekyll-sitemap
 
 defaults:
   -
