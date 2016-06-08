@@ -19,6 +19,7 @@ highlighter: rouge
 
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 defaults:
   -
