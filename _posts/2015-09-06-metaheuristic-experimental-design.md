@@ -63,13 +63,13 @@ Here are the results for our A- and D-optimal designs:
 {% highlight r %}
 c(table(SA.Aresults))
 
-## 12, 8 
-##    10
+>> 12, 8 
+>>    10
 
 c(table(SA.Dresults))
 
-## 10, 10 
-##     10
+>> 10, 10 
+>>     10
 {% endhighlight %}
 
 In each case, all 10 runs of our algorithm agreed on an optimal design. For A-optimality, we get that exposing 12 of the boards to none of the chemical and 8 boards to a full hour of the chemical produces the optimal design. For D-optimality, we get our known result that the optimal design is half the boards at zero exposure and the other half at maximum exposure. Simulated annealing is my personal favorite metaheuristic as in my experience it performs well at the default settings. However, (anecdotally) it is slower than the following methods.
@@ -103,13 +103,13 @@ How does it perform?
 {% highlight r %}
 c(table(PSO.Aresults))
 
-## 11, 9 12, 8 13, 7 
-##     4     5     1
+>> 11, 9 12, 8 13, 7 
+>>     4     5     1
 
 c(table(PSO.Dresults))
 
-## 10, 10  9, 11 
-##      9      1
+>> 10, 10  9, 11 
+>>      9      1
 {% endhighlight %}
 
 One disadvantage of particle swarm optimization is that we're not guaranteed a globally optimal result. That's not to say that it can't be useful. We need to consider if finding the *exact* optimal design is of any practical important for our problem versus finding something that is close to the optimal design. If we don't need an exact result, PSO is still highly appealing because tuning it only requires deciding on the size of the swarm and the number of iterations. Additionally, it seems to run much faster than either simulated annealing or genetic algorithms (again, this is anecdotal).
@@ -138,18 +138,18 @@ I've only ran this once because I haven't found it incredibly simple to compare 
 {% highlight r %}
 table(GA.AOpt)
 
-## GA.AOpt
-## 0.003 0.004 0.005 0.006 0.009 0.011 0.014 0.015 0.018 0.026 0.982 0.989 
-##     1     1     1     1     1     3     1     1     1     1     1     1 
-## 0.992 0.993 0.994 0.998 
-##     1     1     1     3
+>> GA.AOpt
+>> 0.003 0.004 0.005 0.006 0.009 0.011 0.014 0.015 0.018 0.026 0.982 0.989 
+>>     1     1     1     1     1     3     1     1     1     1     1     1 
+>> 0.992 0.993 0.994 0.998 
+>>     1     1     1     3
 
 table(GA.DOpt)
 
-## 0.005 0.006 0.008  0.01 0.012 0.013 0.014 0.015 0.025 0.984 0.985 0.988 
-##     1     1     2     1     1     1     1     1     1     1     1     1 
-## 0.992 0.993 0.997 0.999     1 
-##     1     1     2     1     2
+>> 0.005 0.006 0.008  0.01 0.012 0.013 0.014 0.015 0.025 0.984 0.985 0.988 
+>>     1     1     2     1     1     1     1     1     1     1     1     1
+>> 0.992 0.993 0.997 0.999     1
+>>     1     1     2     1     2
 {% endhighlight %}
 
 Like PSO, convergence to a global optimum is not guaranteed. If you round the above numbers you'll find that the genetic algorithm returns results that are close to what we found using simulated annealing. Again, in your particular application a set of results that is close to the global optimum may suffice and genetic algorithms may be worth considering.

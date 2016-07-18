@@ -5,7 +5,7 @@
 
  /* Background */
  .highlight pre {
-    background-color: #49483E;
+    background-color: #151e32;
     border: 1px solid #ccc;
     padding: 6px 10px;
     border-radius: 3px;
@@ -14,17 +14,18 @@
 
  /* Comment */
 .highlight .c {
-    color: #75715e;
+    color: #808080;
 }
 
 /* Error */
 .highlight .err {
-    color: #960050; background-color: #1e0010
+    /* color: #960050; background-color: #1e0010 */
+    color: #ff0000; font-style: underline;
 }
 
 /* Keyword */
 .highlight .k {
-    color: #66d9ef
+    color: #e5663d
 }
 
 /* Literal */
@@ -34,37 +35,37 @@
 
 /* Name */
 .highlight .n {
-    color: #f8f8f2
+    color: #2f88fd
 }
 
 /* Operator */
 .highlight .o {
-    color: #f92672
+    color: #c7c8d2
 }
 
 /* Punctuation */
 .highlight .p {
-    color: #f8f8f2
+    color: #c7c8d2
 }
 
 /* Comment.Multiline */
 .highlight .cm {
-    color: #75715e
+    color: #808080
 }
 
 /* Comment.Preproc */
 .highlight .cp {
-    color: #75715e
+    color: #808080
 }
 
 /* Comment.Single */
 .highlight .c1 {
-    color: #75715e
+    color: #808080
 }
 
 /* Comment.Special */
 .highlight .cs {
-    color: #75715e
+    color: #808080
 }
 
 /* Generic.Deleted */
@@ -209,7 +210,7 @@
 
 /* Name.Function */
 .highlight .nf {
-    color: #a6e22e
+    color: #7cc64a
 }
 
 /* Name.Label */
